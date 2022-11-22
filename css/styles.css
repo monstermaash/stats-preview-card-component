@@ -1,0 +1,167 @@
+/* GENERAL */
+body {
+  background-color: hsl(233, 47%, 7%);
+  color: hsl(0, 0%, 100%);
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  text-align: left;
+  font-size: 12px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  padding: 1%;
+}
+
+h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 34px;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 2%;
+}
+
+/* CONTAINER */
+.container {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: fit-content;
+  border-radius: 5px;
+  overflow: hidden;  
+  width: fit-content;
+  margin: auto;
+  margin-top: 200px;  
+  margin-bottom: 3rem;
+}
+
+/* LEFT SIDE */
+.left-box {
+  display: flexbox;
+  width: 550px;
+  padding: 6% 6.5% 5% 6%;
+  background-color: hsl(244, 38%, 16%);
+}
+
+.insights {
+  color: hsl(277, 64%, 61%);
+}
+
+.paragraph {
+  margin-top: 10%;
+  font-size: 15px;
+  line-height: 1.5;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.stats-preview {
+  display: flex;
+  position: absolute;
+  margin-top: 4rem;
+  color: hsla(0, 0%, 100%, 0.6);
+  }
+
+.stats {
+  display: inline-block;
+  margin-right: 35%;
+  }
+
+/* RIGHT SIDE */
+.right-box {
+  display: flexbox;
+  height: 450px;
+}
+  
+.image-desktop {
+  background-color: hsl(277, 64%, 61%);
+  height: 450px;
+  filter: opacity(0.5) drop-shadow(0 0 0 hsl(278, 100%, 50%));
+}
+
+.image-mobile {
+  display: none;
+}
+
+
+/* RESPONSIVENESS */
+  @media only screen and (max-width: 375px) {
+    body {
+      flex-direction: column;
+      padding: 5%;
+      justify-content: center;
+    }
+    .container {
+      justify-content: center;
+      position: relative; 
+    }
+    .image-desktop {
+      display: none;
+    }
+    .image-mobile {
+      display: block;
+      width: 340px;
+      filter: opacity(0.5) drop-shadow(0 0 0 hsl(278, 100%, 50%));
+      border-radius: 10px;
+    }
+    .right-box {
+      width: auto;
+      position: fixed;
+      top: 4rem;
+      padding: 5%;
+    }
+    .left-box {
+      display: block;
+      position: fixed;
+      width: 305px;
+      margin-top: 6.5rem;
+      padding: 10% 5%;
+      text-align: center;
+      z-index: 1;
+    }
+    h1 {
+      font-size: 30px;
+    }
+    h2 {
+      margin-bottom: 0;
+      font-size: 25px;
+    }
+    p {
+      text-align: center;
+      font-size: 15px;
+      padding: 2%;
+    }
+    .paragraph {
+      text-align: center;
+      margin-top: 2%;
+      padding: 5%;
+    }
+    .stats-preview {
+      display: inline-block;
+      text-align: center;
+      background-color: hsl(244, 38%, 16%);
+      margin-top: 1rem;
+      margin-bottom: 3rem;
+      width: 342px;
+      left: 0;   
+      border-radius: 10px; 
+      padding-bottom: 2rem;
+    }
+    .stats {
+      display: block;
+      padding: 2%;
+      margin-right: 0;
+
+    }
+  }
+
+
